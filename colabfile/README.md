@@ -9,10 +9,10 @@
 (Stable Diffusion WebUIのような感じです）
 <br><br>
 
-最初にランタイムをGPUに変更
+### 最初にランタイムをGPUに変更
 ![](images/1-1.png)
 
-無料版は[T4 GPU]に<br>
+### 無料版は[T4 GPU]に<br>
 ※JapaneseStableLMは[A100]でしか動作確認できてません。（有料版のみ選択可能）
 ![](images/1-2.png)
 
