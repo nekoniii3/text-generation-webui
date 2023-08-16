@@ -1,6 +1,6 @@
 # Text-generation-webUI用Colabノート
  Text-generation-webUIを使うためのGoogleColabノートブックです。<br>
-基のリポジトリはこちら→[Text generation web UI](https://github.com/oobabooga/text-generation-webui)
+利用していますリポジトリはこちら→[Text generation web UI](https://github.com/oobabooga/text-generation-webui)
 <br><br>
 
 ## 利用方法
@@ -33,7 +33,7 @@
 ・初期設定でキャラクターがついてある場合があるので適宜設定して下さい。<br>
 （日本語で設定すると、回答も日本語になる可能性が上がります）
 
-
+上部タブの[Parameters]の[Character]タブ内のContentを修正して保存してください。
 ![](images/2-1.png)
 
 
