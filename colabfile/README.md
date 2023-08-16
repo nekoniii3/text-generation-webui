@@ -12,7 +12,8 @@
 最初にランタイムをGPUに変更
 ![](images/s-1-1.png)
 
-※JapaneseStableLMはA100でしか動作しないようです
+無料版は[T4 GPU]に<br>
+※JapaneseStableLMはA100でしか動作確認できてません。（有料版のみ選択可能）
 ![](images/1-2.png)
 
 
