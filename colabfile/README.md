@@ -9,7 +9,11 @@
 (Stable Diffusion WebUIのような感じです）
 <br><br>
 
+最初にランタイムをGPUに変更
 ![](images/s-1-1.png)
+
+※JapaneseStableLMはA100でしか動作しないようです
+![](images/1-2.png)
 
 
 
