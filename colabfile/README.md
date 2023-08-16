@@ -5,7 +5,7 @@
 
 ## 利用方法
 
-①～③までの再生マークを順に実行し、表示される"http://～.gradio.live"をクリックして実行して下さい。<br>
+①～③までの再生マークを順に実行し、表示される"http:// ～.gradio.live"をクリックして実行して下さい。<br>
 (Stable Diffusion WebUIのような感じです）
 <br><br>
 
@@ -25,7 +25,7 @@
 ③の再生マークをクリック
 ![](images/1-5.png)
 
-"http://～.gradio.live"をクリック（URLが出てくるまで3分程度かかります）
+"http:// ～.gradio.live"をクリック（URLが出てくるまで3分程度かかります）
 ![](images/1-6.png)
 
 ## 注意
