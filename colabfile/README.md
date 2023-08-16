@@ -40,7 +40,7 @@
 ## 補足
 JapaneseStableLMはそのままだと動作しなかったため、models.pyを修正しています。<br>
 （tokenizerを"novelai/nerdstash-tokenizer-v1"にしています。）
-<br>
+<br><br>
 ## 利用させて頂いたリポジトリ・モデルファイルなど
 
 ・JapaneseStableLMモデルファイル<br>
