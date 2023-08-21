@@ -261,7 +261,6 @@ def generate_reply_HF(question, original_question, seed, state, stopping_strings
 
     # Encode the input
     print("デバッグ")
-    print(str(add_special_tokens))
     input_ids = encode(question, add_bos_token=state['add_bos_token'], truncation_length=get_max_prompt_length(state),add_special_tokens=False)
     output = input_ids[0]
     cuda = not any((shared.args.cpu, shared.args.deepspeed))
