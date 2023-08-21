@@ -260,7 +260,7 @@ def generate_reply_HF(question, original_question, seed, state, stopping_strings
         generate_params.update({'synced_gpus': True})
 
     # Encode the input
-    print("デバッグ")
+    # add_special_tokensをjapanese-large-lmは強制的にFalseに
     input_ids = encode(question, add_bos_token=state['add_bos_token'], truncation_length=get_max_prompt_length(state),add_special_tokens=False)
     output = input_ids[0]
     cuda = not any((shared.args.cpu, shared.args.deepspeed))
