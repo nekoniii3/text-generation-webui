@@ -99,22 +99,25 @@ def load_tokenizer(model_name, model):
     path_to_model = Path(f"{shared.args.model_dir}/{model_name}/")
     if any(s in model_name.lower() for s in ['gpt-4chan', 'gpt4chan']) and Path(f"{shared.args.model_dir}/gpt-j-6B/").exists():
         tokenizer = AutoTokenizer.from_pretrained(Path(f"{shared.args.model_dir}/gpt-j-6B/"))
+    elif model_name.startswith("stabilityai_japanese-stablelm-instruct-alpha-") or \
+        model_name.startswith("stabilityai_japanese-instructblip") or \
+        model_name.startswith("stabilityai_japanese-stablelm-base-alpha-"):
+
+        # JananeseStableLM用にtokenizerを指定
+        tokenizer = AutoTokenizer.from_pretrained(
+            "novelai/nerdstash-tokenizer-v1",
+            trust_remote_code=shared.args.trust_remote_code,
+            use_fast=False
+        )
     elif path_to_model.exists():
         try:
-            # JananeseStableLM用にtokenizerを指定
-            # tokenizer = AutoTokenizer.from_pretrained(
-            #     path_to_model,
-            #     trust_remote_code=shared.args.trust_remote_code,
-            #     use_fast=False
-            # )
             tokenizer = AutoTokenizer.from_pretrained(
-                "novelai/nerdstash-tokenizer-v1",
+                path_to_model,
                 trust_remote_code=shared.args.trust_remote_code,
                 use_fast=False
             )
 
         except ValueError:
-            print("デバッグ：ValueError")
             tokenizer = AutoTokenizer.from_pretrained(
                 path_to_model,
                 trust_remote_code=shared.args.trust_remote_code,
